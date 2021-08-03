@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#FFEB3B"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="150dp"
+        android:text="COUNTER APPLICATION"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/counter_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="100sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<EditText
+    android:id="@+id/counter_stop_value"
+    android:layout_width="wrap_content"
+    android:textAlignment="center"
+    android:layout_height="wrap_content"
+    android:hint="stop time."
+    android:gravity="center_horizontal" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <Button
+        android:layout_width="wrap_content"
+        android:onClick="submit_counter"
+        android:layout_height="wrap_content"
+        android:text="submit"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:onClick="clear_counter"
+        android:layout_marginLeft="20dp"
+        android:backgroundTint="#F44336"
+        android:layout_height="wrap_content"
+        android:text="clear"/>
+
+</LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="start_counter"
+        android:text="START"
+        android:layout_marginTop="50dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STOP"
+        android:onClick="stop_counter"
+        android:layout_marginTop="20dp"
+        />
+
+</LinearLayout>
